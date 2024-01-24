@@ -85,6 +85,7 @@ class _NewExpenseState extends State<NewExpense> {
       child: Column(
         children: [
           TextField(
+            style: const TextStyle(color: Colors.white70),
             controller: _titleController,
             maxLength: 50,
             decoration: const InputDecoration(
@@ -140,7 +141,10 @@ class _NewExpenseState extends State<NewExpense> {
                     .map(
                       (category) => DropdownMenuItem(
                         value: category,
-                        child: Text(category.name.toUpperCase()),
+                        child: Text(
+                          category.name.toUpperCase(),
+                          style: const TextStyle(color: Colors.white70),
+                        ),
                       ),
                     )
                     .toList(),
