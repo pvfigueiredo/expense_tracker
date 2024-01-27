@@ -1,5 +1,6 @@
-import 'package:expense_tracker/src/widgets/expenses.dart';
 import 'package:flutter/material.dart';
+
+import 'package:expense_tracker/src/widgets/expenses.dart';
 
 var kColorScheme = ColorScheme.fromSeed(seedColor: Colors.blue);
 var kDarkColorScheme = ColorScheme.fromSeed(
